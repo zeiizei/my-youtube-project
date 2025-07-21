@@ -1,0 +1,51 @@
+.sidebar
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 82px;
+    z-index: 200;
+    
+}
+
+.home-button, .explore-button, .subscriptions-button, .originals-button, .youtube-music-button, .library-button
+{
+    width: 82px;
+    height: 84px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.sidebar-link button
+{
+    transition: background-color 0.15s;
+}
+
+.sidebar-link button:hover
+{
+    background-color: rgb(225, 224, 224);
+    
+
+}
+
+.originals-icon, .yt-music-icon, .library-icon
+{
+    width: 34px;
+}
+
+.sidebar-link div
+{
+    font-family: Roboto, Arial;
+    font-size: 12px;
+}
+
+.sidebar-link
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

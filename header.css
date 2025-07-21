@@ -1,0 +1,204 @@
+.header
+{
+    height: 55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: white;
+
+    border-bottom-width:1px ;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+
+    z-index: 100;
+}
+
+.left-section
+{
+    display: flex;
+    align-items: center;
+}
+
+.menu
+{
+    height: 25px;
+    margin-left: 20px;
+    margin-right: 24px;
+}
+
+.yt-logo
+{
+    height: 20px;
+}
+
+.middle-section
+{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    
+}
+
+.search-box
+{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    flex: 1;
+    width: 0;
+    height: 36px;
+    border-radius: 20px;
+    padding-left: 12px;
+    margin-right: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(180, 180, 180);
+}
+
+.search-button
+{
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    
+    
+}
+
+.mic-button
+{
+    height: 40px;
+    padding-top: 5px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(244, 244, 244);
+}
+
+.right-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin-right: 5px;
+    flex-shrink: 0;
+}
+
+.upload
+{
+    height: 30px;
+    border: none;
+    background-color: white;
+}
+
+.apps
+{
+    height: 26px;
+    border: none;
+    background-color: white;
+}
+
+.notification
+{
+    height: 34px;
+    border: none;
+    background-color: white;
+    padding-top: 7px;
+    position: relative;
+}
+
+.channel
+{
+    height: 30px;
+    border: none;
+    background-color: white;
+    padding-top: 3px;
+}
+
+.channel-p
+{
+    height: 28px;
+    border-radius: 14px;
+}
+
+.right-section button , .middle-section button
+{
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button .tooltip,
+.mic-button .tooltip, 
+.upload .tooltip,
+.apps .tooltip, 
+.notification .tooltip, 
+.channel .tooltip
+{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+
+}
+
+.search-button:hover .tooltip, .mic-button:hover .tooltip, 
+.upload:hover .tooltip, .apps:hover .tooltip, .notification:hover .tooltip, .channel:hover .tooltip
+{
+    opacity: 1;
+}
+
+.right-section div, .middle-section div
+{
+    font-family: Roboto, Arial;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.notifications-count
+{
+    position: absolute;
+    top: 3px;
+    right: -1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: brown;
+    border-radius: 9px;
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    
+    
+}
+
+button.notification .notifications-count
+{
+    font-size: 11px;
+    font-family: Roboto, Arial;
+}
